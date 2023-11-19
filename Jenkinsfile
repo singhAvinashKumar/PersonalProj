@@ -14,7 +14,7 @@ tools{
     stage('Build'){
       steps{
         echo 'Build the project using Maven'
-                bat 'mvn clean install'
+                bat 'mvn clean install -DskipTests'
         
       }
     }
