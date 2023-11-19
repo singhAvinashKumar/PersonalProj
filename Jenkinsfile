@@ -13,7 +13,7 @@ tools{
     stage('Build'){
       steps{
         echo 'Build the project using Maven'
-                sh 'mvn clean install'
+                bat 'mvn clean install'
         
       }
     }
