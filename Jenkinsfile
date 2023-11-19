@@ -5,7 +5,12 @@ tools{
   jdk 'jdk17'
 }
   stages{
-
+ stage('Git_Checkout'){
+      steps{
+      echo 'Checkout code from Git'
+                git 'https://github.com/singhAvinashKumar/PersonalProj.git'
+      }
+    }
     stage('Build'){
       steps{
         echo 'Build the project using Maven'
