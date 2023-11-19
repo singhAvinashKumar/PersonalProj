@@ -1,12 +1,14 @@
 pipeline{
   agent any
 tools{
-  maven ' Maven 3.9.5'
+  maven 'Maven-3.9.5'
 }
   stages{
     stage('Git_Checkout'){
+      steps{
       echo 'Checkout code from Git'
-                git 'https://your.git.repo.url.git'
+                git 'https://github.com/singhAvinashKumar/PersonalProj.git'
+      }
     }
     stage('Build'){
       steps{
